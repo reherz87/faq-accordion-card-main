@@ -1,0 +1,111 @@
+:root {
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(0deg, var(--softBlue) 0%, var(--softViolet) 100%);
+  color: var(--darkGrayishBlue);
+  font-size: 12px;
+}
+
+main {
+  background: #fff;
+  margin: 9rem 1.5rem 5rem 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--veryDarkDesaturatedBlue);
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h3.active {
+  font-weight: 700;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.illustration {
+  width: 70%;
+  margin-top: -6.5rem;
+  margin-left: 3rem;
+}
+
+.shadow {
+  margin-top: -5rem;
+  margin-left: 2.5rem;
+}
+
+.faq {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.arrow.rotate {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--lightGrayishBlue);
+}
+
+p {
+  text-align: left;
+  margin: 0 2rem 1.5rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+a {
+  color: var(--veryDarkDesaturatedBlue);
+}
