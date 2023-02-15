@@ -109,3 +109,27 @@ footer {
 a {
   color: var(--veryDarkDesaturatedBlue);
 }
+
+@media screen and (min-width: 1260px) {
+  main {
+    width: 70%;
+    margin: 10rem auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .faq {
+    text-align: left;
+    flex: 1;
+    margin: 3rem 5rem 5rem 5rem;
+  }
+  .images {
+    flex: 1;
+  }
+  .illustration {
+    margin-top: 7rem;
+  }
+  
+  .shadow {
+    margin-top: -5rem;
+  }
+}
